@@ -9,17 +9,17 @@
 <meta property="og:title" content="Redybat — Carreleur, peintre et plaquiste à Lyon">
 <meta property="og:description" content="Carrelage, peinture, placo, façade. Artisan lyonnais, plus de 10 ans de métier. Devis gratuit.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://shigyn.github.io/redybat/photos/terrasse-apres.webp">
-<meta property="og:image:width" content="880">
-<meta property="og:image:height" content="658">
-<meta property="og:image:alt" content="Terrasse en travertin posée par Redybat à Lyon">
+<meta property="og:image" content="https://shigyn.github.io/redybat/photos/hero-1600.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1088">
+<meta property="og:image:alt" content="Séjour rénové, mur habillé de bois et de béton">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://shigyn.github.io/redybat/">
 <meta property="og:site_name" content="Redybat">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://shigyn.github.io/redybat/">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#12141A">
+<meta name="theme-color" content="#0E1015">
 <meta name="author" content="Redybat">
 <meta name="geo.region" content="FR-69">
 <meta name="geo.placename" content="Lyon">
@@ -28,7 +28,8 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="photos/hero-1600.webp" imagesrcset="photos/hero-800.webp 800w, photos/hero-1600.webp 1600w" imagesizes="100vw">
 
 <script type="application/ld+json">
 {
@@ -38,7 +39,7 @@
   "name": "Redybat",
   "alternateName": "Redybat Rénovation Intérieur",
   "description": "Artisan carreleur, peintre et plaquiste à Lyon depuis plus de 10 ans. Pose de carrelage intérieur et extérieur, peinture, placo et ravalement de façade.",
-  "image": "https://shigyn.github.io/redybat/photos/terrasse-apres.webp",
+  "image": "https://shigyn.github.io/redybat/photos/hero-1600.webp",
   "url": "https://shigyn.github.io/redybat/",
   "telephone": "+33767725627",
   "email": "Redybat1990@hotmail.com",
@@ -86,44 +87,45 @@
 /* ===================================================================
    REDYBAT — carreleur, peintre, plaquiste a Lyon
 
-   LA COULEUR N'EST PAS INVENTEE. Le rouge, les gris et la pierre
-   sont PRELEVES sur les propres visuels du client : le rouge et les
-   ardoises viennent de son logo (releve de palette du 2026-09-09), le
-   beige vient du travertin de la terrasse qu'il a posee et publiee.
+   LA COULEUR N'EST PAS INVENTEE. Le rouge et les ardoises sont
+   PRELEVES au releve de palette sur le logo du client (2026-09-09),
+   le beige vient du travertin de la terrasse qu'il a posee.
 
-   Le detail qui compte : ses gris tirent sur le BLEU, ils ne sont
-   pas neutres. C'est ce qui fait qu'ils ont l'air choisis, et on
-   garde ce biais plutot que de le << corriger >> vers un gris pur.
+   Ses gris tirent sur le BLEU, ils ne sont pas neutres : c'est ce qui
+   fait qu'ils ont l'air choisis, et on garde ce biais. Un seul a ete
+   deplace, pour une raison mesuree et pas de gout : le gris des traits
+   ne tenait pas les 3:1 exiges de la bordure d'un champ. Voir --acier.
 
-   Un seul a ete deplace, et pour une raison mesuree, pas de gout :
-   le gris des traits (#535E6D dans le logo) ne tenait pas les 3:1
-   exiges de la bordure d'un champ de formulaire. Il a ete eclairci
-   jusqu'a passer, en gardant le meme biais bleu — voir --acier.
+   CE QUI PORTE LA PAGE, C'EST LA PHOTO. Premiere version : un hero de
+   texte sur aplat noir, les images confinees dans de petites vignettes.
+   Resultat, une page qui s'ouvrait sur un rectangle gris. Ici l'image
+   est plein cadre, le texte se pose dessus, et le fond n'est jamais un
+   aplat : il porte une lueur et un grain.
    =================================================================== */
 :root {
-  --rouge:    #C3231F;   /* le rouge exact du logotype REDYBAT */
-  --rouge-vif:#E03A34;   /* la version qui tient le contraste sur fond sombre */
-  --nuit:     #12141A;   /* le fond profond, releve du logo */
-  --ardoise:  #1B1E27;   /* la surface qui se detache d'un cheveu du fond */
-  --ardoise-2:#272A35;
-  /* Les traits. Le #535E6D releve du logo ne mesurait que 2,80:1
-     sur --nuit et 2,53:1 sur --ardoise : sous les 3:1 qu'exige la
-     regle 1.4.11 pour la BORDURE d'un champ de formulaire, qui est
-     ce qui dit au visiteur ou il peut ecrire. Eclairci jusqu'a
-     passer sur les DEUX fonds — 3,40:1 sur --nuit, 3,07:1 sur
-     --ardoise, mesures au navigateur. */
+  --rouge:    #C3231F;
+  --rouge-vif:#E03A34;
+  --nuit:     #0E1015;   /* plus profond que la v1 : la photo ressort */
+  --ardoise:  #171A22;
+  --ardoise-2:#242833;
+  /* Les traits. #535E6D (releve du logo) ne mesurait que 2,80:1 sur
+     --nuit : sous les 3:1 de la regle 1.4.11 pour la bordure d'un
+     champ, qui est ce qui dit ou l'on peut ecrire. Eclairci jusqu'a
+     passer sur les DEUX fonds, mesure au navigateur. */
   --acier:    #5F6B7B;
-  --pierre:   #A0968C;   /* le travertin de la terrasse */
-  --craie:    #F5F3F0;   /* le texte courant, jamais du blanc pur */
-  --brume:    #A8AEB8;   /* le texte secondaire */
+  --pierre:   #C0B4A6;   /* le travertin, eclairci pour tenir sur le noir */
+  --craie:    #F6F4F1;
+  --brume:    #AEB4BE;
 
   --disp: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
   --texte: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 
-  --wrap: 1180px;
-  --r: 14px;
-  /* Le rythme vertical de toute la page tient dans cette variable. */
-  --rythme: clamp(72px, 9vw, 130px);
+  --wrap: 1200px;
+  --r: 16px;
+  --rythme: clamp(84px, 10vw, 150px);
+  /* Une seule courbe pour toutes les entrees : c'est ce qui fait qu'un
+     site anime a l'air d'un seul geste et non de dix. */
+  --ease: cubic-bezier(.22, 1, .36, 1);
 }
 
 *, *::before, *::after { box-sizing: border-box }
@@ -131,229 +133,378 @@ html { scroll-behavior: smooth }
 body {
   margin: 0; background: var(--nuit); color: var(--craie);
   font-family: var(--texte); font-size: 17px; line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
 }
 img { max-width: 100%; display: block }
 a { color: inherit }
-h1, h2, h3 { font-family: var(--disp); font-weight: 800; line-height: 1.05; margin: 0; text-wrap: balance }
+h1, h2, h3 { font-family: var(--disp); font-weight: 800; line-height: 1.03; margin: 0; text-wrap: balance }
 p { margin: 0 }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 22px; position: relative; z-index: 1 }
 
-.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 22px }
+/* --- La matiere du fond ---------------------------------------------
+   Deux couches decoratives sur le corps de page, et c'est tout ce qui
+   separe un << aplat gris >> d'un fond qui a de la profondeur :
 
-/* Le surtitre : capitales espacees, jamais sur un titre. */
+     - une LUEUR rouge tres diluee, qui rappelle la couleur de la marque
+       sans jamais la nommer ;
+     - un GRAIN, en SVG inline, qui casse la platitude du noir. Sans lui,
+       les grands aplats sombres montrent des bandes de degrade sur les
+       ecrans 8 bits.
+
+   `z-index: -1`, ET C'EST LE POINT QUI COMPTE.
+
+   Premiere version : `z-index: 0` sur les deux couches, en pensant que
+   le `z-index: 1` de `main` suffirait a passer devant. Faux — le
+   `mix-blend-mode: overlay` du grain le fait fusionner avec ce qui est
+   dessous dans son groupe de fusion, et le hero est ressorti NOIR. La
+   photo etait chargee, decodee, correctement dimensionnee, et
+   invisible : c'est une couche decorative qui l'eteignait.
+
+   A `-1` les deux couches se peignent au-dessus du fond du body et
+   SOUS tout contenu en flux. Elles ne peuvent plus rien recouvrir. Le
+   grain n'a alors plus besoin de fusionner : une opacite simple suffit,
+   et le rendu devient previsible. */
+body::before,
+body::after {
+  content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+}
+body::before {
+  background:
+    radial-gradient(58vw 42vw at 78% -6%, rgba(195,35,31,.20), transparent 62%),
+    radial-gradient(46vw 38vw at 6% 22%, rgba(95,107,123,.16), transparent 66%);
+}
+body::after {
+  opacity: .07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+main, header, footer { position: relative; z-index: 1 }
+
 .surtitre {
-  font-size: 12px; font-weight: 600; letter-spacing: .16em;
+  font-size: 12px; font-weight: 600; letter-spacing: .18em;
   text-transform: uppercase; color: var(--pierre);
 }
+/* Le joint se trace au moment ou la section entre : un trait qui se
+   dessine dit << ca commence ici >> mieux qu'un trait deja pose. */
+.joint {
+  width: 52px; height: 3px; background: var(--rouge-vif); margin-bottom: 22px;
+  transform-origin: left; transform: scaleX(0);
+  transition: transform .8s var(--ease) .1s;
+}
+.reveal[data-vu] .joint, .joint[data-vu] { transform: scaleX(1) }
 
-/* --- Le joint -------------------------------------------------------
-   Un carreleur travaille la trame : des pleins separes par des vides
-   reguliers. Ce filet rouge est ce vide, repris comme signature de
-   section. Il n'y en a qu'un par section — c'est ce qui lui garde sa
-   valeur. */
-.joint { width: 46px; height: 3px; background: var(--rouge); margin-bottom: 20px }
-
-/* --- Boutons ------------------------------------------------------ */
+/* --- Boutons --------------------------------------------------------- */
 .bt {
-  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
-  min-height: 52px; padding: 0 26px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 54px; padding: 0 28px; border-radius: 999px;
   font-family: var(--texte); font-size: 16px; font-weight: 600;
   text-decoration: none; cursor: pointer; border: 1px solid transparent;
-  transition: transform .16s ease, background-color .16s ease, border-color .16s ease;
+  transition: transform .2s var(--ease), background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
 }
 .bt:hover { transform: translateY(-2px) }
-/* Le remplissage rouge ne mesure que 2,15:1 sur le fond noir : c'est
-   lui qui donne sa FORME au bouton, et la regle 1.4.11 en demande 3.
-   Le liseré --rouge-vif (4,23:1) dessine le contour sans changer la
-   couleur du bouton — la marque garde son rouge exact, la forme
-   reste lisible pour qui distingue mal les rouges sombres. */
-.bt-plein { background: var(--rouge); color: #fff; border-color: var(--rouge-vif) }
-.bt-plein:hover { background: var(--rouge-vif); border-color: var(--rouge-vif) }
-.bt-nu { border-color: var(--acier); color: var(--craie) }
-.bt-nu:hover { border-color: var(--pierre) }
+/* Le remplissage rouge ne mesure que 2,15:1 sur le fond : c'est lui qui
+   donne sa FORME au bouton, et la regle 1.4.11 en demande 3. Le lisere
+   --rouge-vif (4,23:1) dessine le contour sans toucher a la couleur. */
+.bt-plein { background: var(--rouge); color: #fff; border-color: var(--rouge-vif); box-shadow: 0 10px 30px rgba(195,35,31,.28) }
+.bt-plein:hover { background: var(--rouge-vif); box-shadow: 0 16px 40px rgba(224,58,52,.36) }
+.bt-nu { border-color: rgba(246,244,241,.42); color: var(--craie); backdrop-filter: blur(6px) }
+.bt-nu:hover { border-color: var(--craie); background: rgba(246,244,241,.08) }
 .bt:focus-visible { outline: 3px solid var(--rouge-vif); outline-offset: 3px }
 
-/* --- Entete ------------------------------------------------------- */
+/* --- Entete ---------------------------------------------------------- */
 .entete {
-  position: sticky; top: 0; z-index: 40;
-  background: rgba(18, 20, 26, .88); backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--ardoise-2);
+  position: fixed; top: 0; left: 0; right: 0; z-index: 40;
+  transition: background-color .35s ease, border-color .35s ease, backdrop-filter .35s ease;
+  border-bottom: 1px solid transparent;
 }
-.entete-in { display: flex; align-items: center; gap: 18px; min-height: 68px }
-.marque { font-family: var(--disp); font-weight: 800; font-size: 22px; letter-spacing: -.01em; text-decoration: none }
+/* Transparente sur la photo du hero, elle ne se pose qu'une fois passe. */
+.entete[data-pose] {
+  background: rgba(14, 16, 21, .82); backdrop-filter: blur(14px) saturate(140%);
+  border-bottom-color: var(--ardoise-2);
+}
+.entete-in { display: flex; align-items: center; gap: 18px; min-height: 74px }
+.marque { font-family: var(--disp); font-weight: 800; font-size: 23px; letter-spacing: -.015em; text-decoration: none }
 .marque em { color: var(--rouge-vif); font-style: normal }
-.entete nav { margin-left: auto; display: flex; gap: 24px; align-items: center }
-.entete nav a { font-size: 15px; text-decoration: none; color: var(--brume) }
+.entete nav { margin-left: auto; display: flex; gap: 26px; align-items: center }
+.entete nav a { font-size: 15px; text-decoration: none; color: rgba(246,244,241,.8) }
 .entete nav a:hover { color: var(--craie) }
-@media (max-width: 860px) { .entete nav a:not(.bt) { display: none } }
+@media (max-width: 900px) { .entete nav a:not(.bt) { display: none } }
 
-/* --- Hero ---------------------------------------------------------- */
-.hero { position: relative; padding: clamp(56px, 8vw, 104px) 0 var(--rythme) }
-.hero-grille { display: grid; gap: clamp(34px, 5vw, 60px); grid-template-columns: 1fr }
-@media (min-width: 940px) { .hero-grille { grid-template-columns: 1.05fr .95fr; align-items: center } }
-.hero h1 { font-size: clamp(40px, 7vw, 76px); letter-spacing: -.025em }
+/* =====================================================================
+   HERO — la photo prend tout l'ecran, le texte se pose dessus.
+
+   Le lent zoom (`respire`) est la SEULE animation continue du site.
+   Elle dure 22 s : assez lente pour qu'on ne la voie pas bouger, assez
+   presente pour que l'image ne soit pas figee. Au-dela, ca devient un
+   diaporama, et un diaporama fatigue.
+   ===================================================================== */
+.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; overflow: hidden }
+.hero-fond { position: absolute; inset: 0; z-index: 0 }
+.hero-fond img { width: 100%; height: 100%; object-fit: cover; animation: respire 22s ease-in-out infinite alternate }
+@keyframes respire { from { transform: scale(1.06) } to { transform: scale(1.14) translate3d(-1.2%, -1%, 0) } }
+/* LE VOILE, ET LES DEUX PIEGES QU'IL TEND.
+
+   1. DEUX DEGRADES NE S'ADDITIONNENT PAS, ILS SE COMPOSENT. 0,28 pose
+      sur 0,78 ne fait pas 1,06 mais 1-(0,72 x 0,22) = 0,84. Le premier
+      hero superposait un voile vertical et un voile horizontal : la
+      photo etait bien chargee, et parfaitement invisible.
+
+   2. LE TEXTE EST ALIGNE EN BAS. Alleger le voile << en moyenne >> n'a
+      donc rien change : le titre tombait pile a la hauteur ou le
+      degrade vertical etait le plus sombre.
+
+   D'ou UN SEUL degrade, horizontal, comme sur le site de reference du
+   projet : dense a gauche ou se pose le texte, dissipe avant la moitie
+   pour qu'on voie la piece. Le degrade vertical ne sert plus qu'aux
+   douze derniers pour-cent, a fondre l'image dans le fond de la page.
+
+   Sous 900 px le texte occupe toute la largeur : un voile horizontal
+   n'y protege plus rien, il repasse en vertical. */
+/*  Les arrets ne sont pas choisis a l'oeil : ils sont cales sur
+    l'ETENDUE MESUREE du texte. Le titre court jusqu'a 68 % de la
+    largeur, l'accroche jusqu'a 59 % — un voile deja tombe a 0,2 des
+    56 % laissait donc la fin du titre sans fond. Le plateau tient
+    maintenant jusqu'a 62 %, puis se dissipe vite pour rendre la
+    moitie droite de la piece au visiteur. */
+.hero-voile {
+  position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(180deg, transparent 66%, rgba(14,16,21,.7) 88%, var(--nuit) 100%),
+    linear-gradient(90deg,
+      rgba(14,16,21,.92) 0%,
+      rgba(14,16,21,.82) 40%,
+      rgba(14,16,21,.55) 62%,
+      rgba(14,16,21,.12) 82%,
+      transparent 100%);
+}
+/*  Sur telephone le voile doit etre BEAUCOUP plus dense, et ce n'est
+    pas un choix esthetique : le texte occupe toute la largeur, il ne
+    peut plus se refugier dans une zone sombre choisie. Mesure sur
+    375 px avec un voile a 0,42 : surtitre 1,69:1, titre 2,91:1,
+    accroche 3,85:1 — les trois sous leur seuil.
+
+    Le palier a 0,68 vient d'un calcul et non d'un reglage a l'oeil :
+    le surtitre est en --pierre (luminance relative 0,466), il lui
+    faut donc un fond sous 74/255 pour tenir 4,5:1 ; face aux pixels
+    les plus clairs de la photo (235), cela demande un voile d'au
+    moins 0,73 a sa hauteur. */
+@media (max-width: 900px) {
+  .hero-voile {
+    background: linear-gradient(180deg,
+      rgba(14,16,21,.62) 0%,
+      rgba(14,16,21,.68) 30%,
+      rgba(14,16,21,.88) 75%,
+      var(--nuit) 100%);
+  }
+  /*  Le surtitre est en --pierre, une couleur CLAIRE, et il se pose
+      tout en haut du hero — la ou la photo est la plus lumineuse et
+      le voile le plus leger. Il mesurait encore 3,44:1 apres avoir
+      renforce le voile. Plutot que d'assombrir davantage la photo
+      pour trois mots, ces trois mots passent au blanc : le beige
+      reste partout ailleurs, ou il a de quoi tenir. */
+  .hero .surtitre { color: var(--craie) }
+}
+/* Un liseré d'ombre porte sur le texte lui-meme. Il ne noircit pas la
+   photo, il protege le blanc des zones claires de l'image — une
+   fenetre derriere un titre suffit a le faire passer sous le seuil. */
+.hero-in h1, .hero-in .hero-accroche, .hero-in .surtitre {
+  text-shadow: 0 2px 22px rgba(9, 10, 14, .55);
+}
+.hero-in { position: relative; z-index: 2; width: 100%; padding: 150px 0 clamp(48px, 7vw, 88px) }
+.hero h1 { font-size: clamp(44px, 8.2vw, 92px); letter-spacing: -.032em; max-width: 15ch }
 .hero h1 em { color: var(--rouge-vif); font-style: normal }
-.hero-accroche { margin-top: 22px; font-size: clamp(17px, 2vw, 20px); color: var(--brume); max-width: 30em }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px }
-
-/* Les trois metiers, en trame. */
-.metiers-bande { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px }
+.hero-accroche { margin-top: 24px; font-size: clamp(17px, 2vw, 20.5px); color: rgba(246,244,241,.88); max-width: 34em }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px }
+.metiers-bande { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px }
 .metiers-bande span {
-  font-size: 13.5px; font-weight: 600; letter-spacing: .02em;
-  padding: 7px 15px; border: 1px solid var(--ardoise-2); border-radius: 999px;
-  color: var(--brume); background: var(--ardoise);
+  font-size: 13.5px; font-weight: 600; padding: 8px 16px; border-radius: 999px;
+  color: rgba(246,244,241,.92); border: 1px solid rgba(246,244,241,.32);
+  background: rgba(14,16,21,.34); backdrop-filter: blur(8px);
 }
 
-/* --- La preuve : avant / apres ------------------------------------
-   PAS de comparateur a curseur. Les deux photos du client ne sont pas
-   cadrees depuis le meme point de vue (verifie le 2026-09-09) : un
-   rideau glissant ferait sauter l'image au lieu de la reveler, et le
-   visiteur croirait a un bug plutot qu'a une transformation. Deux
-   cadres cote a cote disent la meme chose, honnetement. */
-.paire { display: grid; gap: 14px; grid-template-columns: 1fr }
+/* --- Sections --------------------------------------------------------- */
+section { padding: var(--rythme) 0 }
+.tete-section { max-width: 42em; margin-bottom: clamp(38px, 5vw, 60px) }
+.tete-section h2 { font-size: clamp(32px, 5vw, 54px); letter-spacing: -.028em }
+.tete-section p { margin-top: 18px; color: var(--brume); font-size: clamp(16px, 1.7vw, 18.5px) }
+
+/* =====================================================================
+   BANDE PHOTO PLEINE LARGEUR
+
+   C'est elle qui donne son rythme a la page : on alterne du contenu et
+   de l'image, plutot que de derouler six blocs de texte sur le meme
+   fond. Le parallaxe est fait en CSS pur (`background-attachment`),
+   avec un repli en `scroll` sur mobile — `fixed` y est soit ignore,
+   soit responsable de saccades, sur iOS notamment.
+   ===================================================================== */
+.bande {
+  position: relative; min-height: clamp(340px, 46vw, 540px);
+  display: flex; align-items: center;
+  background-size: cover; background-position: center;
+  background-attachment: fixed;
+}
+@media (hover: none), (max-width: 900px) { .bande { background-attachment: scroll } }
+.bande::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(14,16,21,.92) 0%, rgba(14,16,21,.58) 55%, rgba(14,16,21,.26) 100%);
+}
+.bande-txt { position: relative; z-index: 1; max-width: 30em }
+.bande-txt h2 { font-size: clamp(28px, 4vw, 44px); letter-spacing: -.025em }
+.bande-txt p { margin-top: 16px; color: rgba(246,244,241,.88) }
+.chiffre { font-family: var(--disp); font-weight: 800; font-size: clamp(52px, 8vw, 92px); line-height: 1; color: var(--rouge-vif) }
+
+/* --- Cartes metiers ---------------------------------------------------- */
+.cartes { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 252px), 1fr)) }
+.carte {
+  position: relative; overflow: hidden; border-radius: var(--r);
+  border: 1px solid var(--ardoise-2); background: var(--ardoise);
+  display: flex; flex-direction: column;
+  transition: border-color .3s ease, transform .3s var(--ease), box-shadow .3s ease;
+}
+.carte:hover { border-color: var(--acier); transform: translateY(-5px); box-shadow: 0 22px 50px rgba(0,0,0,.45) }
+.carte-img { aspect-ratio: 3 / 2; overflow: hidden; background: var(--ardoise-2) }
+.carte-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease) }
+.carte:hover .carte-img img { transform: scale(1.06) }
+.carte-txt { padding: 24px 24px 28px }
+.carte h3 { font-size: 21px; margin-bottom: 10px }
+.carte p { color: var(--brume); font-size: 15.5px }
+
+/* --- Avant / apres ------------------------------------------------------
+   PAS de comparateur a curseur : les deux photos du client ne sont pas
+   prises du meme point de vue (verifie en les superposant). Un rideau
+   glissant ferait SAUTER l'image au lieu de la reveler, et le visiteur
+   croirait a un bug plutot qu'a une transformation. */
+.paire { display: grid; gap: 16px; grid-template-columns: 1fr }
 @media (min-width: 720px) { .paire { grid-template-columns: 1fr 1fr } }
-.volet { position: relative; border-radius: var(--r); overflow: hidden; background: var(--ardoise) }
-.volet img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3 }
+.volet { position: relative; border-radius: var(--r); overflow: hidden; background: var(--ardoise); margin: 0 }
+.volet img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3; transition: transform .7s var(--ease) }
+.volet:hover img { transform: scale(1.04) }
 .volet figcaption {
-  position: absolute; top: 12px; left: 12px;
-  font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-  padding: 6px 13px; border-radius: 999px;
-  background: rgba(18,20,26,.82); color: var(--craie);
-  backdrop-filter: blur(6px);
+  position: absolute; top: 14px; left: 14px; z-index: 1;
+  font-size: 11.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  padding: 7px 15px; border-radius: 999px;
+  background: rgba(14,16,21,.8); color: var(--craie); backdrop-filter: blur(8px);
 }
 .volet[data-apres] figcaption { background: var(--rouge); color: #fff }
 
-/* --- Sections ------------------------------------------------------ */
-section { padding: var(--rythme) 0 }
-.tete-section { max-width: 40em; margin-bottom: clamp(34px, 4.5vw, 54px) }
-.tete-section h2 { font-size: clamp(30px, 4.4vw, 46px); letter-spacing: -.02em }
-.tete-section p { margin-top: 16px; color: var(--brume) }
-
-/* Le liseré qui separe deux sections : un joint, encore. */
-.filet { height: 1px; background: var(--ardoise-2) }
-
-/* --- Les metiers --------------------------------------------------- */
-.cartes { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)) }
-.carte {
-  background: var(--ardoise); border: 1px solid var(--ardoise-2);
-  border-radius: var(--r); overflow: hidden;
-  display: flex; flex-direction: column;
-  transition: border-color .18s ease, transform .18s ease;
-}
-.carte:hover { border-color: var(--acier); transform: translateY(-3px) }
-.carte-img { aspect-ratio: 3 / 2; background: var(--ardoise-2) }
-.carte-img img { width: 100%; height: 100%; object-fit: cover }
-.carte-txt { padding: 22px 22px 26px }
-.carte h3 { font-size: 20px; margin-bottom: 9px }
-.carte p { color: var(--brume); font-size: 15.5px }
-
-/* --- Le deroule ---------------------------------------------------- */
+/* --- Le deroule ---------------------------------------------------------- */
 .etapes { display: grid; gap: 2px; background: var(--ardoise-2); border: 1px solid var(--ardoise-2); border-radius: var(--r); overflow: hidden }
-@media (min-width: 780px) { .etapes { grid-template-columns: repeat(3, 1fr) } }
-.etape { background: var(--nuit); padding: 30px 26px 34px }
-/* Le rouge vif mesure 4,23:1 sur le fond : au-dessus des 3:1 du
-   GRAND texte, en dessous des 4,5:1 du petit. A 15 px il etait donc
-   hors regle. Passe a 22 px en gras il devient du grand texte, et
-   le meme rouge passe — plutot que d'eclaircir le rouge de la
-   marque pour un numero de trois caracteres. Un chiffre d'etape
-   gagne d'ailleurs a se voir de loin. */
-.etape-n {
-  font-family: var(--disp); font-weight: 800; font-size: 22px;
-  color: var(--rouge-vif); letter-spacing: .06em;
-}
-.etape h3 { font-size: 21px; margin: 12px 0 10px }
+@media (min-width: 800px) { .etapes { grid-template-columns: repeat(3, 1fr) } }
+.etape { background: var(--ardoise); padding: 34px 28px 38px; transition: background-color .3s ease }
+.etape:hover { background: #1C2029 }
+/* Le rouge vif mesure 4,23:1 : au-dessus des 3:1 du GRAND texte, en
+   dessous des 4,5:1 du petit. A 22 px en gras, c'est du grand texte et
+   le rouge de la marque passe — plutot que d'eclaircir ce rouge pour
+   trois caracteres. */
+.etape-n { font-family: var(--disp); font-weight: 800; font-size: 22px; color: var(--rouge-vif); letter-spacing: .06em }
+.etape h3 { font-size: 22px; margin: 14px 0 12px }
 .etape p { color: var(--brume); font-size: 15.5px }
 
-/* --- Zone ---------------------------------------------------------- */
-.zone-grille { display: grid; gap: clamp(30px, 4vw, 54px); grid-template-columns: 1fr }
+/* --- Zone ---------------------------------------------------------------- */
+.zone-grille { display: grid; gap: clamp(32px, 4.5vw, 58px); grid-template-columns: 1fr }
 @media (min-width: 900px) { .zone-grille { grid-template-columns: 1fr 1fr; align-items: center } }
-.communes { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 26px }
+.communes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px }
 .communes span {
-  font-size: 14px; padding: 7px 14px; border-radius: 999px;
+  font-size: 14px; padding: 8px 15px; border-radius: 999px;
   border: 1px solid var(--ardoise-2); background: var(--ardoise); color: var(--brume);
+  transition: border-color .25s ease, color .25s ease;
 }
+.communes span:hover { border-color: var(--acier); color: var(--craie) }
 
-/* --- Contact ------------------------------------------------------- */
-.contact-grille { display: grid; gap: clamp(30px, 4vw, 54px); grid-template-columns: 1fr }
-@media (min-width: 900px) { .contact-grille { grid-template-columns: .9fr 1.1fr } }
-.coord { display: grid; gap: 14px; margin-top: 26px }
-/* Ces trois-la sont des COMMANDES, pas des cartes : appeler, ecrire,
-   ouvrir Facebook. Leur bordure est ce qui dit qu'on peut cliquer,
-   elle tient donc les 3:1 de la regle 1.4.11 — elle mesurait 1,16
-   avec --ardoise-2.
-
-   Sur un site d'artisan, l'appui sur le numero est l'action qui
-   compte : c'est le dernier endroit ou economiser du contraste. */
+/* --- Contact -------------------------------------------------------------- */
+.contact-grille { display: grid; gap: clamp(32px, 4.5vw, 58px); grid-template-columns: 1fr }
+@media (min-width: 900px) { .contact-grille { grid-template-columns: .92fr 1.08fr } }
+.coord { display: grid; gap: 14px; margin-top: 28px }
+/* Ces trois-la sont des COMMANDES : appeler, ecrire, ouvrir Facebook.
+   Leur bordure est ce qui dit qu'on peut cliquer, elle tient donc les
+   3:1 de la regle 1.4.11 — elle mesurait 1,16 avec --ardoise-2. Sur un
+   site d'artisan, l'appui sur le numero est l'action qui compte : c'est
+   le dernier endroit ou economiser du contraste. */
 .coord a {
-  display: flex; align-items: center; gap: 13px; text-decoration: none;
-  padding: 15px 18px; border: 1px solid var(--acier); border-radius: var(--r);
-  background: var(--ardoise); transition: border-color .16s ease;
+  display: flex; align-items: center; gap: 14px; text-decoration: none;
+  padding: 16px 19px; border: 1px solid var(--acier); border-radius: var(--r);
+  background: var(--ardoise); transition: border-color .25s ease, transform .25s var(--ease);
 }
-.coord a:hover { border-color: var(--pierre) }
+.coord a:hover { border-color: var(--pierre); transform: translateX(4px) }
 .coord a:focus-visible { outline: 3px solid var(--rouge-vif); outline-offset: 3px }
 .coord b { font-family: var(--disp); font-size: 18px; display: block }
 .coord small { color: var(--brume); font-size: 13.5px }
 
-form { display: grid; gap: 14px }
-label { display: grid; gap: 7px; font-size: 14.5px; color: var(--brume) }
+form { display: grid; gap: 15px }
+label { display: grid; gap: 8px; font-size: 14.5px; color: var(--brume) }
 input, textarea, select {
   font: inherit; font-size: 16px; color: var(--craie);
   /* --acier et non --ardoise-2 : la bordure d'un champ est ce qui
-     indique ou l'on peut ecrire, elle doit donc tenir 3:1. */
+     indique ou l'on peut ecrire, elle doit tenir 3:1. */
   background: var(--ardoise); border: 1px solid var(--acier);
-  border-radius: 11px; padding: 13px 15px; min-height: 50px; width: 100%;
+  border-radius: 12px; padding: 14px 16px; min-height: 52px; width: 100%;
+  transition: border-color .25s ease;
 }
 /* Le focus ne peut pas se signaler par la bordure : elle est deja
    --acier au repos. Un contour franc, donc. */
 input:focus-visible, textarea:focus-visible, select:focus-visible {
   outline: 3px solid var(--rouge-vif); outline-offset: 2px; border-color: var(--pierre);
 }
-textarea { min-height: 130px; resize: vertical }
+textarea { min-height: 140px; resize: vertical }
 .pot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden }
 .statut { font-size: 15px; color: var(--pierre); min-height: 1.4em }
 .statut[data-erreur] { color: var(--rouge-vif) }
 
-/* --- Pied ----------------------------------------------------------- */
-footer { border-top: 1px solid var(--ardoise-2); padding: 40px 0 46px; color: var(--brume); font-size: 14.5px }
+/* --- Pied ------------------------------------------------------------------ */
+footer { border-top: 1px solid var(--ardoise-2); padding: 42px 0 48px; color: var(--brume); font-size: 14.5px }
 .pied-grille { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center }
 footer a { text-decoration: none }
 footer a:hover { color: var(--craie) }
 
-/* --- WhatsApp flottant ---------------------------------------------- */
+/* --- WhatsApp ------------------------------------------------------------- */
 .wa {
   position: fixed; right: 18px; bottom: 18px; z-index: 50;
-  width: 56px; height: 56px; border-radius: 999px;
-  background: #25D366; display: grid; place-items: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,.4);
-  transition: transform .16s ease;
+  width: 58px; height: 58px; border-radius: 999px; background: #25D366;
+  display: grid; place-items: center; box-shadow: 0 12px 34px rgba(0,0,0,.45);
+  transition: transform .22s var(--ease);
 }
-.wa:hover { transform: scale(1.06) }
-.wa svg { width: 30px; height: 30px; fill: #fff }
+.wa:hover { transform: scale(1.08) }
+.wa svg { width: 31px; height: 31px; fill: #fff }
 
-/* --- Reveal au scroll ------------------------------------------------
-   Le repli est un etat VISIBLE, jamais un ecran vide : si le script ne
-   part pas, ou si le visiteur a demande moins d'animation, le contenu
-   est simplement la. */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease }
+/* =====================================================================
+   LES ENTREES AU SCROLL
+
+   Une seule courbe (--ease), une seule distance, et un DECALAGE entre
+   voisins : c'est le decalage qui fait lire un groupe comme un geste
+   plutot que comme six elements qui apparaissent ensemble.
+
+   `[data-vu]` est pose par le script. Le repli est un etat VISIBLE :
+   si le script ne part pas, ou si le visiteur a demande moins
+   d'animation, tout est simplement la.
+   ===================================================================== */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .85s var(--ease), transform .85s var(--ease) }
 .reveal[data-vu] { opacity: 1; transform: none }
+.reveal[data-retard="1"] { transition-delay: .09s }
+.reveal[data-retard="2"] { transition-delay: .18s }
+.reveal[data-retard="3"] { transition-delay: .27s }
+.reveal[data-retard="4"] { transition-delay: .36s }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto }
   .reveal { opacity: 1; transform: none; transition: none }
-  .bt:hover, .carte:hover, .wa:hover { transform: none }
+  .joint { transform: scaleX(1); transition: none }
+  .hero-fond img { animation: none }
+  .bande { background-attachment: scroll }
+  .bt:hover, .carte:hover, .wa:hover, .coord a:hover { transform: none }
+  .carte:hover .carte-img img, .volet:hover img { transform: none }
 }
 </style>
 </head>
 
 <body>
 
-<header class="entete">
+<header class="entete" id="entete">
   <div class="wrap entete-in">
     <a class="marque" href="#top">REDY<em>BAT</em></a>
     <nav>
       <a href="#metiers">Nos métiers</a>
       <a href="#realisations">Réalisations</a>
       <a href="#deroule">Comment ça se passe</a>
-      <a href="#contact" class="bt bt-plein" style="min-height:44px;padding:0 20px;font-size:15px">Devis gratuit</a>
+      <a href="#contact" class="bt bt-plein" style="min-height:46px;padding:0 22px;font-size:15px">Devis gratuit</a>
     </nav>
   </div>
 </header>
@@ -362,38 +513,31 @@ footer a:hover { color: var(--craie) }
 
   <!-- ============================ HERO ============================ -->
   <section class="hero">
-    <div class="wrap hero-grille">
-      <div>
-        <p class="surtitre" data-editable-zone="hero_surtitre">Artisan à Lyon depuis plus de 10 ans</p>
-        <h1 style="margin-top:16px" data-editable-zone="hero_titre">Le carrelage,<br>ça se juge <em>au joint</em>.</h1>
-        <p class="hero-accroche" data-editable-zone="hero_accroche">Carrelage intérieur et extérieur, peinture, placo et façade. Un seul artisan du premier coup de crayon à la dernière plinthe — et un chantier qu'on vous rend propre.</p>
+    <div class="hero-fond">
+      <img data-editable-zone="hero_photo_1" src="photos/hero-1600.webp"
+           srcset="photos/hero-800.webp 800w, photos/hero-1600.webp 1600w" sizes="100vw"
+           alt="Séjour rénové ouvert sur la cuisine, mur habillé de bois et de béton"
+           width="1600" height="1088" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero-voile" aria-hidden="true"></div>
 
-        <div class="metiers-bande">
+    <div class="hero-in">
+      <div class="wrap">
+        <p class="surtitre reveal" data-vu data-editable-zone="hero_surtitre">Artisan à Lyon depuis plus de 10 ans</p>
+        <h1 class="reveal" data-vu data-retard="1" style="margin-top:18px" data-editable-zone="hero_titre">Le carrelage,<br>ça se juge <em>au joint</em>.</h1>
+        <p class="hero-accroche reveal" data-vu data-retard="2" data-editable-zone="hero_accroche">Carrelage intérieur et extérieur, peinture, placo et façade. Un seul artisan du premier coup de crayon à la dernière plinthe — et un chantier qu'on vous rend propre.</p>
+
+        <div class="metiers-bande reveal" data-vu data-retard="3">
           <span>Carrelage</span><span>Peinture</span><span>Placo</span><span>Façade</span>
         </div>
 
-        <div class="hero-actions">
+        <div class="hero-actions reveal" data-vu data-retard="4">
           <a class="bt bt-plein" href="tel:+33767725627">Appeler le 07 67 72 56 27</a>
           <a class="bt bt-nu" href="#realisations">Voir un chantier</a>
         </div>
       </div>
-
-      <!-- La preuve avant même la promesse : le visiteur voit le travail
-           dans le premier écran, pas trois sections plus bas. -->
-      <div class="paire reveal">
-        <figure class="volet" style="margin:0">
-          <img data-editable-zone="realisation_1_avant" src="photos/terrasse-avant.webp" alt="Dalle béton nue avant la pose du carrelage extérieur" width="880" height="1186" loading="eager" decoding="async">
-          <figcaption>Avant</figcaption>
-        </figure>
-        <figure class="volet" data-apres style="margin:0">
-          <img data-editable-zone="realisation_1_apres" src="photos/terrasse-apres.webp" alt="Terrasse en travertin posée par Redybat" width="880" height="658" loading="eager" decoding="async">
-          <figcaption>Après</figcaption>
-        </figure>
-      </div>
     </div>
   </section>
-
-  <div class="wrap"><div class="filet"></div></div>
 
   <!-- ========================== LES MÉTIERS ======================== -->
   <section id="metiers">
@@ -413,24 +557,24 @@ footer a:hover { color: var(--craie) }
           </div>
         </article>
 
-        <article class="carte reveal">
-          <div class="carte-img"><img data-editable-zone="service_peinture_img" src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=760&h=507&fit=crop&q=75" alt="Rouleau de peinture chargé sur un bac" width="760" height="507" loading="lazy" decoding="async"></div>
+        <article class="carte reveal" data-retard="1">
+          <div class="carte-img"><img data-editable-zone="service_peinture_img" src="photos/peinture-800.webp" srcset="photos/peinture-800.webp 800w, photos/peinture-1600.webp 1600w" sizes="(min-width:1200px) 285px, 100vw" alt="Séjour dont le mur du fond a été peint en vert profond" width="800" height="450" loading="lazy" decoding="async"></div>
           <div class="carte-txt">
             <h3>Peinture</h3>
             <p data-editable-zone="service_peinture_desc">Murs, plafonds, boiseries. Préparation des supports, enduit, ponçage, deux couches. C'est le travail sous la peinture qui décide de ce à quoi elle ressemblera dans cinq ans.</p>
           </div>
         </article>
 
-        <article class="carte reveal">
-          <div class="carte-img"><img data-editable-zone="service_placo_img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=760&h=507&fit=crop&q=75" alt="Pièce rénovée aux cloisons et sols neufs" width="760" height="507" loading="lazy" decoding="async"></div>
+        <article class="carte reveal" data-retard="2">
+          <div class="carte-img"><img data-editable-zone="service_placo_img" src="photos/carrelage-sdb-800.webp" srcset="photos/carrelage-sdb-800.webp 800w, photos/carrelage-sdb-1600.webp 1600w" sizes="(min-width:1200px) 285px, 100vw" alt="Salle de bain carrelée avec douche à l'italienne" width="800" height="534" loading="lazy" decoding="async"></div>
           <div class="carte-txt">
             <h3>Placo &amp; cloisons</h3>
             <p data-editable-zone="service_placo_desc">Cloisons, doublages, faux plafonds, isolation. Créer une chambre, fermer une mezzanine, isoler un mur froid — la structure d'abord, les bandes ensuite.</p>
           </div>
         </article>
 
-        <article class="carte reveal">
-          <div class="carte-img"><img data-editable-zone="service_facade_img" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=760&h=507&fit=crop&q=75" alt="Façade de maison individuelle rénovée" width="760" height="507" loading="lazy" decoding="async"></div>
+        <article class="carte reveal" data-retard="3">
+          <div class="carte-img"><img data-editable-zone="service_facade_img" src="photos/facade-800.webp" srcset="photos/facade-800.webp 800w, photos/facade-1600.webp 1600w" sizes="(min-width:1200px) 285px, 100vw" alt="Façade de maison individuelle rénovée" width="800" height="600" loading="lazy" decoding="async"></div>
           <div class="carte-txt">
             <h3>Façade</h3>
             <p data-editable-zone="service_facade_desc">Nettoyage, reprise des fissures, enduit et mise en peinture. Une façade se refait tous les quinze ans environ : c'est ce qui protège le mur, pas seulement ce qui se voit de la rue.</p>
@@ -440,7 +584,19 @@ footer a:hover { color: var(--craie) }
     </div>
   </section>
 
-  <div class="wrap"><div class="filet"></div></div>
+  <!-- ===================== BANDE : L'EXPÉRIENCE ==================== -->
+  <!-- La chambre a parement : sombre par nature (75/255), c'est
+       exactement ce qu'il faut sous un texte blanc. Elle etait en
+       hero, ou elle disparaissait sous le voile. -->
+  <div class="bande" style="background-image:url('photos/parement-1600.webp')">
+    <div class="wrap">
+      <div class="bande-txt reveal">
+        <div class="chiffre" data-editable-zone="bande_chiffre">10 ans</div>
+        <h2 style="margin-top:12px" data-editable-zone="bande_titre">de matières entre les mains</h2>
+        <p data-editable-zone="bande_texte">Travertin, grès cérame, faïence, parement. Chaque matériau a sa découpe, sa colle et son joint — et une pose ratée se voit pendant vingt ans.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- ========================= RÉALISATIONS ======================== -->
   <section id="realisations">
@@ -451,21 +607,19 @@ footer a:hover { color: var(--craie) }
         <p data-editable-zone="realisations_intro">Le chantier commence sur une dalle béton nue et se termine en opus romain. Entre les deux : la préparation du support, le calepinage, la découpe des rives et les joints. C'est ce qu'on ne voit plus une fois que c'est fini.</p>
       </div>
 
-      <div class="paire reveal" style="margin-bottom:16px">
-        <figure class="volet" style="margin:0">
-          <img data-editable-zone="realisation_2_avant" src="photos/terrasse-avant.webp" alt="La dalle béton avant pose" width="880" height="1186" loading="lazy" decoding="async">
+      <div class="paire">
+        <figure class="volet reveal">
+          <img data-editable-zone="realisation_1_avant" src="photos/terrasse-avant.webp" alt="La dalle béton nue, avant la pose" width="880" height="1186" loading="lazy" decoding="async">
           <figcaption>Avant</figcaption>
         </figure>
-        <figure class="volet" data-apres style="margin:0">
-          <img data-editable-zone="realisation_2_apres" src="photos/terrasse-vue.webp" alt="La terrasse terminée, vue d'ensemble" width="880" height="1174" loading="lazy" decoding="async">
+        <figure class="volet reveal" data-retard="2" data-apres>
+          <img data-editable-zone="realisation_1_apres" src="photos/terrasse-apres.webp" alt="La terrasse en travertin, une fois posée" width="880" height="658" loading="lazy" decoding="async">
           <figcaption>Après</figcaption>
         </figure>
       </div>
-      <p class="surtitre reveal" data-editable-zone="realisation_2_lieu">Terrasse extérieure · Région lyonnaise</p>
+      <p class="surtitre reveal" data-retard="3" style="margin-top:20px" data-editable-zone="realisation_2_lieu">Terrasse extérieure · Région lyonnaise</p>
     </div>
   </section>
-
-  <div class="wrap"><div class="filet"></div></div>
 
   <!-- ======================== LE DÉROULÉ =========================== -->
   <section id="deroule">
@@ -476,18 +630,18 @@ footer a:hover { color: var(--craie) }
         <p data-editable-zone="deroule_intro">Trois étapes, pas de surprise sur la facture : le devis fixe le prix, et le prix ne bouge pas sans que vous l'ayez accepté par écrit.</p>
       </div>
 
-      <div class="etapes reveal">
-        <div class="etape">
+      <div class="etapes">
+        <div class="etape reveal">
           <div class="etape-n">01</div>
           <h3 data-editable-zone="etape_1_titre">On vient voir</h3>
           <p data-editable-zone="etape_1_texte">Visite sur place, prise de mesures, conseil sur les matériaux. Le déplacement et le devis sont gratuits, et sans engagement.</p>
         </div>
-        <div class="etape">
+        <div class="etape reveal" data-retard="1">
           <div class="etape-n">02</div>
           <h3 data-editable-zone="etape_2_titre">On chiffre</h3>
           <p data-editable-zone="etape_2_texte">Un devis détaillé ligne par ligne, avec les quantités et la durée du chantier. Vous savez ce que vous payez et quand ce sera fini.</p>
         </div>
-        <div class="etape">
+        <div class="etape reveal" data-retard="2">
           <div class="etape-n">03</div>
           <h3 data-editable-zone="etape_3_titre">On pose</h3>
           <p data-editable-zone="etape_3_texte">Protection des sols et des meubles, chantier tenu propre, évacuation des gravats. On vous rend la pièce prête à vivre, pas prête à nettoyer.</p>
@@ -496,37 +650,43 @@ footer a:hover { color: var(--craie) }
     </div>
   </section>
 
-  <div class="wrap"><div class="filet"></div></div>
+  <!-- ====================== BANDE : LE CHANTIER ==================== -->
+  <div class="bande" style="background-image:url('photos/matiere-1600.webp')">
+    <div class="wrap">
+      <div class="bande-txt reveal">
+        <h2 data-editable-zone="bande2_titre">On vous rend la pièce, pas le chantier</h2>
+        <p data-editable-zone="bande2_texte">Sols protégés, meubles bâchés, gravats évacués le jour même. Ce qui reste quand on part, c'est la pièce — pas la poussière.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- =========================== LA ZONE =========================== -->
   <section id="zone">
     <div class="wrap zone-grille">
       <div class="reveal">
         <div class="joint"></div>
-        <h2 style="font-size:clamp(30px,4.4vw,46px);letter-spacing:-.02em" data-editable-zone="zone_titre">Lyon et sa périphérie</h2>
-        <p style="margin-top:16px;color:var(--brume)" data-editable-zone="zone_intro">Basés dans le 8ᵉ arrondissement, nous intervenons dans Lyon et jusqu'à une quarantaine de kilomètres autour. Au-delà, appelez quand même : selon la taille du chantier, ça se discute.</p>
+        <h2 style="font-size:clamp(32px,5vw,54px);letter-spacing:-.028em" data-editable-zone="zone_titre">Lyon et sa périphérie</h2>
+        <p style="margin-top:18px;color:var(--brume)" data-editable-zone="zone_intro">Basés dans le 8ᵉ arrondissement, nous intervenons dans Lyon et jusqu'à une quarantaine de kilomètres autour. Au-delà, appelez quand même : selon la taille du chantier, ça se discute.</p>
         <div class="communes" data-editable-zone="zone_communes">
           <span>Lyon</span><span>Villeurbanne</span><span>Vénissieux</span><span>Bron</span>
           <span>Saint-Priest</span><span>Caluire-et-Cuire</span><span>Oullins</span><span>Vaulx-en-Velin</span>
         </div>
       </div>
-      <div class="reveal">
-        <div class="volet">
+      <div class="reveal" data-retard="2">
+        <figure class="volet">
           <img data-editable-zone="apropos_image" src="photos/logo-redybat.webp" alt="Logo Redybat — carrelage, peinture, placo" width="880" height="586" loading="lazy" decoding="async" style="aspect-ratio:3/2">
-        </div>
+        </figure>
       </div>
     </div>
   </section>
-
-  <div class="wrap"><div class="filet"></div></div>
 
   <!-- ========================== CONTACT ============================ -->
   <section id="contact">
     <div class="wrap contact-grille">
       <div class="reveal">
         <div class="joint"></div>
-        <h2 style="font-size:clamp(30px,4.4vw,46px);letter-spacing:-.02em" data-editable-zone="contact_titre">Parlons de votre chantier</h2>
-        <p style="margin-top:16px;color:var(--brume)" data-editable-zone="contact_intro">Le plus simple reste le téléphone : on répond, et on cale une visite. Sinon, laissez un message, on rappelle.</p>
+        <h2 style="font-size:clamp(32px,5vw,54px);letter-spacing:-.028em" data-editable-zone="contact_titre">Parlons de votre chantier</h2>
+        <p style="margin-top:18px;color:var(--brume)" data-editable-zone="contact_intro">Le plus simple reste le téléphone : on répond, et on cale une visite. Sinon, laissez un message, on rappelle.</p>
 
         <div class="coord">
           <a href="tel:+33767725627">
@@ -544,7 +704,7 @@ footer a:hover { color: var(--craie) }
         </div>
       </div>
 
-      <div class="reveal">
+      <div class="reveal" data-retard="2">
         <form id="form-contact" novalidate>
           <label>Votre nom
             <input type="text" name="nom" autocomplete="name" required>
@@ -607,33 +767,51 @@ footer a:hover { color: var(--craie) }
 
   document.getElementById('annee').textContent = new Date().getFullYear();
 
-  /* Reveal au scroll.
-
-     `IntersectionObserver` n'existe pas partout, et il ne se declenche
-     pas dans certains environnements d'apercu. Dans les deux cas on
-     montre tout : un site qui n'anime pas reste un site qu'on lit, un
-     site qui reste invisible n'est plus un site. */
-  var cibles = document.querySelectorAll('.reveal');
   var doux = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* --- L'entete se pose une fois le hero passe ---------------------
+     Un observateur sur une sentinelle plutot qu'un ecouteur de scroll :
+     pas de calcul a chaque pixel defile. */
+  var entete = document.getElementById('entete');
+  if ('IntersectionObserver' in window) {
+    var sentinelle = document.createElement('div');
+    sentinelle.setAttribute('aria-hidden', 'true');
+    sentinelle.style.cssText = 'position:absolute;top:80vh;left:0;height:1px;width:1px;pointer-events:none';
+    document.body.appendChild(sentinelle);
+    new IntersectionObserver(function (e) {
+      if (e[0].isIntersecting) entete.removeAttribute('data-pose');
+      else entete.setAttribute('data-pose', '');
+    }).observe(sentinelle);
+  } else {
+    entete.setAttribute('data-pose', '');
+  }
+
+  /* --- Les entrees au scroll ---------------------------------------
+     Le hero est deja marque `data-vu` dans le HTML : son contenu doit
+     etre la des la premiere image, sans attendre un observateur. */
+  var cibles = document.querySelectorAll('.reveal:not([data-vu])');
 
   function toutMontrer() {
     for (var i = 0; i < cibles.length; i++) cibles[i].setAttribute('data-vu', '');
   }
 
-  if (doux || !('IntersectionObserver' in window)) {
+  if (doux || !('IntersectionObserver' in window) || !cibles.length) {
     toutMontrer();
   } else {
     var obs = new IntersectionObserver(function (entrees) {
       entrees.forEach(function (e) {
         if (e.isIntersecting) { e.target.setAttribute('data-vu', ''); obs.unobserve(e.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
     for (var j = 0; j < cibles.length; j++) obs.observe(cibles[j]);
 
-    /* Filet de securite : si rien n'a ete revele au bout de deux
-       secondes, c'est que l'observateur ne rend pas la main. */
+    /* Filet de securite : si AUCUNE des cibles n'a ete revelee au bout
+       de deux secondes, c'est que l'observateur ne rend pas la main.
+       Un site qui n'anime pas reste un site ; un site invisible n'en
+       est plus un. */
     setTimeout(function () {
-      if (!document.querySelector('.reveal[data-vu]')) toutMontrer();
+      var restants = document.querySelectorAll('.reveal:not([data-vu])').length;
+      if (restants === cibles.length) toutMontrer();
     }, 2000);
   }
 })();
