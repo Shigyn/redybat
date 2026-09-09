@@ -310,7 +310,13 @@ main, header, footer { position: relative; z-index: 1 }
   text-shadow: 0 2px 22px rgba(9, 10, 14, .55);
 }
 .hero-in { position: relative; z-index: 2; width: 100%; padding: 150px 0 clamp(48px, 7vw, 88px) }
-.hero h1 { font-size: clamp(44px, 8.2vw, 92px); letter-spacing: -.032em; max-width: 15ch }
+/*  `max-width` cale sur la MESURE, pas sur une habitude. Le nouveau
+    titre a une premiere ligne de 1009 px a 92 px de corps, pour 1156
+    disponibles : elle tient. Les 15ch d'avant valaient 825 px et la
+    coupaient en deux, ce qui rendait trois lignes la ou le <br> n'en
+    demande que deux. 19ch = 1045 px : de quoi la poser, sans laisser
+    le titre courir sur toute la largeur du bloc. */
+.hero h1 { font-size: clamp(44px, 8.2vw, 92px); letter-spacing: -.032em; max-width: 19ch }
 .hero h1 em { color: var(--rouge-vif); font-style: normal }
 .hero-accroche { margin-top: 24px; font-size: clamp(17px, 2vw, 20.5px); color: rgba(246,244,241,.88); max-width: 34em }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px }
@@ -523,9 +529,9 @@ footer a:hover { color: var(--craie) }
 
     <div class="hero-in">
       <div class="wrap">
-        <p class="surtitre reveal" data-vu data-editable-zone="hero_surtitre">Artisan à Lyon depuis plus de 10 ans</p>
-        <h1 class="reveal" data-vu data-retard="1" style="margin-top:18px" data-editable-zone="hero_titre">Le carrelage,<br>ça se juge <em>au joint</em>.</h1>
-        <p class="hero-accroche reveal" data-vu data-retard="2" data-editable-zone="hero_accroche">Carrelage intérieur et extérieur, peinture, placo et façade. Un seul artisan du premier coup de crayon à la dernière plinthe — et un chantier qu'on vous rend propre.</p>
+        <p class="surtitre reveal" data-vu data-editable-zone="hero_surtitre">Rénovation intérieure et extérieure — Lyon, plus de 10 ans</p>
+        <h1 class="reveal" data-vu data-retard="1" style="margin-top:18px" data-editable-zone="hero_titre">Carrelage, peinture, placo :<br><em>un seul artisan</em>.</h1>
+        <p class="hero-accroche reveal" data-vu data-retard="2" data-editable-zone="hero_accroche">Carrelage, peinture, placo, façade : quatre corps de métier tenus par la même main. Un seul interlocuteur, un seul planning — et un chantier qu'on vous rend propre.</p>
 
         <div class="metiers-bande reveal" data-vu data-retard="3">
           <span>Carrelage</span><span>Peinture</span><span>Placo</span><span>Façade</span>
